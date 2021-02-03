@@ -7,4 +7,6 @@
 
   <!-- navigation -->
   <include file="$(find laas_navigation)/morse_pr2_launch/morse_pr2_nav.launch"/>
+
+  <node name="tracked_human_publisher" type="tracked_human" pkg="hanp_prediction"/>
 </launch>

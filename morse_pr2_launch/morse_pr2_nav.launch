@@ -28,6 +28,8 @@
 
   <!--<node launch-prefix="gdbserver :2000" pkg="move_base" type="move_base" name="move_base_node" output="screen">-->
   <node pkg="move_base" type="move_base" name="move_base_node" output="screen" >
+    <remap from="/move_base_node/TebLocalPlannerROS/hateb_log" to="/human/log"/>
+
     <!-- load additional move_base params -->
     <rosparam file="$(find laas_navigation)/morse_pr2_move_base_config/move_base_params.yaml" command="load" />
 
